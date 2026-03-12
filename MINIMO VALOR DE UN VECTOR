@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class Vector{
+float v[100];
+int n;
+public:
+void ingresar(){
+cin>>n;
+for(int i=0;i<n;i++)
+cin>>v[i];
+}
+void minimo(){
+float m=v[0];
+for(int i=1;i<n;i++)
+if(v[i]<m) m=v[i];
+cout<<m;
+}
+};
+int main(){
+Vector a;
+a.ingresar();
+a.minimo();
+}
