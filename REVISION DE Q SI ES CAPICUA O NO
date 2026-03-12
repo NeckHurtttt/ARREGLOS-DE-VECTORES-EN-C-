@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class Vector{
+float v[100];
+int n;
+public:
+void ingresar(){
+cin>>n;
+for(int i=0;i<n;i++)
+cin>>v[i];
+}
+void capicua(){
+int c=1;
+for(int i=0;i<n;i++)
+if(v[i]!=v[n-1-i]) c=0;
+if(c) cout<<"CAPICUA";
+else cout<<"NO CAPICUA";
+}
+};
+int main(){
+Vector a;
+a.ingresar();
+a.capicua();
+}
