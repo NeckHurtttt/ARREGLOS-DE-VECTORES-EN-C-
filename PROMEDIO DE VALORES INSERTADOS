@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class Vector{
+float v[100];
+int n;
+public:
+void ingresar(){
+cin>>n;
+for(int i=0;i<n;i++)
+cin>>v[i];
+}
+void promedio(){
+float s=0;
+for(int i=0;i<n;i++)
+s+=v[i];
+cout<<s/n;
+}
+};
+int main(){
+Vector a;
+a.ingresar();
+a.promedio();
+}
