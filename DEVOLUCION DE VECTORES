@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class Vector{
+float v[100],r[100];
+int n;
+public:
+void ingresar(){
+cin>>n;
+for(int i=0;i<n;i++)
+cin>>v[i];
+}
+void revertir(){
+for(int i=0;i<n;i++)
+r[i]=v[n-1-i];
+for(int i=0;i<n;i++)
+cout<<r[i]<<" ";
+}
+};
+int main(){
+Vector a;
+a.ingresar();
+a.revertir();
+}
